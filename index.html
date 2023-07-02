@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: yellow; }
+    .attribution a { color: goldenrod; text-decoration: underline; }
+  </style>
+</head>
+<body class="bg-blue-400 text-blue-soft relative">
+  <div class="flex flex-col items-center justify-center p-4 min-h-screen">
+    <div class="flex flex-col bg-blue-300 rounded-2xl p-6 max-w-[24rem] w-full shadow-[0_15px_40px_-15px_rgba(0,0,0,0.7)]">
+      <div class="flex flex-col">
+        <div class="aspect-square overflow-hidden rounded-xl relative group">
+          <span class="w-full">
+            <img class="w-full transition-all duration-300 group-hover:scale-150" src=".\images\image-equilibrium.jpg" alt="">
+          </span>
+          <span class="absolute top-0 left-0 w-full h-full bg-cyan z-0 opacity-0 transition-opacity duration-500 ease-in group-hover:opacity-100 group-hover:cursor-pointer bg-opacity-60 flex items-center justify-center">
+            <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+          </span>
+        </div>
+        <div class="flex flex-col gap-4 py-4">
+          <span class="flex flex-col gap-2">
+            <h1 class="text-xl text-white font-semibold cursor-pointer duration-500 transition-colors hover:text-cyan">Equilibrium #3429</h1>
+            <p class="font-light">Our Equilibrium collection promotes balance and calm</p>
+          </span>
+          <span class="flex justify-between">
+            <span class="text-cyan font-semibold flex gap-1 items-center before:content-[''] before:block before:bg-[url(images/icon-ethereum.svg)] before:w-4 before:h-5 before:bg-no-repeat before:bg-contain before:bg-center">0.041 ETH</span>
+            <span class=" flex gap-1 items-center before:content-[''] before:block before:bg-[url(images/icon-clock.svg)] before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:bg-center">3 days left</span>
+          </span>
+        </div>
+      </div>
+      <div class="pt-4 pb-2 flex items-center gap-4 border-t border-opacity-50 border-blue-soft">
+        <span class="w-8 rounded-full overflow-hidden border border-white box-content">
+          <img class="w-full" src="./images/image-avatar.png" alt="image-avatar">
+        </span>
+        <span>Creation of <span class="text-white cursor-pointer transition-colors duration-500 hover:text-cyan">Jules Wyvern</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="attribution absolute bottom-0 right-0 m-2">
+    Challenge by <a href="https://nithub.unilag.edu.ng" target="_blank">Nithub</a>. 
+    Coded by <a href="https://adeolafadare.netlify.app" target="_blank">Adeola Fadare</a>.
+  </div>
+</body>
+</html>
